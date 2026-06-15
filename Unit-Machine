@@ -1354,7 +1354,7 @@
             
             const calculateLevelMultiplier = (level) => {
                 const core = (1 + 0.007 * level) * (1.003 ** level);
-                return Math.max(1, Math.min(core, 2));
+                return Math.max(1, Math.min(core, 2.3));
             };
 
             const handleMenuClick = (e) => {
