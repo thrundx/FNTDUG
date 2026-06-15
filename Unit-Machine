@@ -1166,7 +1166,7 @@
             
             let pendingMainBoosts = null;
             
-            const MAX_LEVEL = 60;
+            const MAX_LEVEL = 100;
        
             const elementalAdvantages = {
                 "Neutral": { "Boosts": { "Neutral": 0.85 } },
