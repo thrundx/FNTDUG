@@ -1353,8 +1353,8 @@
             };
             
             const calculateLevelMultiplier = (level) => {
-                const core = (1 + 0.007 * level) * (1.003 ** level);
-                return Math.max(1, Math.min(core, 2.3));
+                const core = (1 + 0.007 * level) * (1.0038640711550866 ** level);
+                return Math.max(1, Math.min(core, 2.5));
             };
 
             const handleMenuClick = (e) => {
