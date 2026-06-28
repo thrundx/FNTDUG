@@ -1352,10 +1352,11 @@
                 return name.toLowerCase().replace(/[^a-z0-9]/g, '');
             };
             
-            const calculateLevelMultiplier = (level) => {
-                const core = (1 + 0.007 * level) * (1.0038640711550866 ** level);
-                return Math.max(1, Math.min(core, 2.5));
-            };
+const calculateLevelMultiplier = (level) => {
+    const core = (1 + 0.007 * level) * (1.0038640711550866 ** level);
+    const adjusted = core * 0.970566;
+    return Math.max(1, Math.min(adjusted, 2.5));
+};
 
             const handleMenuClick = (e) => {
                 e.stopPropagation();
